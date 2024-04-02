@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MinimScanner QR+Barcode</string>
+    <string name="scanNowTV_text">Scan</string>
 </resources>
