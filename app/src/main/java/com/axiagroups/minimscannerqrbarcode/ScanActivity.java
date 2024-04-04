@@ -35,7 +35,7 @@ public class ScanActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Log.d("TAG", LocalDateTime.now().toString() + result.getText());
+//                        Log.d("TAG", LocalDateTime.now().toString() + result.getText());
 //                        Toast.makeText(ScanActivity.this, result.getText(), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(ScanActivity.this, ResultActivity.class);
                         intent.putExtra("scannedText", result.getText());

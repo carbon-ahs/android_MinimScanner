@@ -51,8 +51,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startIntentToScannerActivity() {
-        Intent intent = new Intent(MainActivity.this, ResultActivity.class);
-        intent.putExtra("scannedText", "Dummy Text");
+        Intent intent = new Intent(MainActivity.this, ScanActivity.class);
         startActivity(intent);
     }
 
@@ -68,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 // Permission denied, handle accordingly (e.g., display a message, disable camera features)
                 // For simplicity, we just finish the activity
-                Toast.makeText(MainActivity.this, "You need to grant camera accsess to use this application", Toast.LENGTH_LONG)
+                Toast.makeText(MainActivity.this, "You need to grant camera access to use this application", Toast.LENGTH_LONG)
                         .show();
             }
         }
